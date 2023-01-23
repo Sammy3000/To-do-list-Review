@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <title>sammy todo list</title>
+  </head>
+  <body>
+    <main>
+      <section id="todoList-section">
+        <header class="head">
+          <h1>Today's To do</h1>
+          <i class="fa-solid fa-arrows-rotate"></i>
+        </header>
+
+        <!-- Add to your list  -->
+        <form id="add-form">
+          <input
+            type="text"
+            id="add-item"
+            name="add-item"
+            placeholder="Add to your list..."
+          /><i class="fa fa-arrow-turn-down"></i>
+        </form>
+
+        <!-- To do list will be placed here-->
+        <ul class="to-do-list"></ul>
+
+        <!-- completed button will be placed here-->
+        <div id="btn">
+          <button type="button" id="clear-btn">clear all completed</button>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
